@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MalitaxiExamen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Image Source="logo"/>
+            </StackLayout>
+            <Frame BackgroundColor="Red" Padding="24" CornerRadius="0">
+                <Label Text="LOGIN" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario" Grid.Row="0" Grid.Column="0" />
+                <Entry x:Name="txtUsuario" Keyboard="Text" Grid.Row="0" Grid.Column="1" />
+
+                <Label Text="Contraseña" Grid.Row="1" Grid.Column="0" />
+                <Entry x:Name="txtClave" IsPassword="True" Grid.Row="1" Grid.Column="1" />
+
+            </Grid>
+            <Button x:Name="btnAbrir" Text="Ingresar" Clicked="btnAbrir_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
